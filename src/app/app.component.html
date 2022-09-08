@@ -1,3 +1,12 @@
-<h1> Count = {{count}}</h1>
-<h1 *ngIf="count> 0">I am visible if I am greater than 0.</h1>
-<h2 *ngIf="count<0"> I am visible if I am less than 0.</h2>
+<section>
+  <h1>Basic Calculator</h1>
+  <input type="number" placeholder="First Number" [(ngModel)]="num1"> <br><br>
+  <input type="number" placeholder="Second Number" [(ngModel)]="num2"> <br><br>
+  <button (click)="addition()"> + </button>
+  <button (click)="subtraction()">-</button>
+  <button (click)="division()">/</button><br>
+  <button (click)="multiplication()">*</button>
+  <button (click)="power()">^</button>
+  <h2>Result: {{sum}}</h2>
+
+</section>
